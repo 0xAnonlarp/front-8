@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <main>
+
+    <div class="top"><img src="./images/logo.svg" alt="" class="logo"></div>
+
+    <!-- calculator -->
+
+    <div class="calculator-container">
+
+      <div class="calculator">
+        <div class="input">
+          <form>
+
+            <div class="bill">
+              <label  for="bill">Bill</label>
+              <input class="bill-label" type="text" id="bill" pattern="[0-9]+([\.,][0-9]+)?" value="$">
+            </div>
+
+            <div class="percentage-selector">
+              <label for="select-tip">Select Tip %</label>
+              <div class="percent-wrapper" id="select-tip">
+                <input class="percentages" id="5" type="button" value="5%" />
+                <input class="percentages" id="10" type="button" value="10%" />
+                <input class="percentages" id="15" type="button" value="15%" />
+                <input class="percentages" id="20" type="button" value="20%" />
+                <input class="percentages" id="25" type="button" value="25%" />
+                <input class="percentages" id="25" type="button" value="25%" />
+              </div>
+            </div>
+
+            <div class="bill people">
+              <label  for="people"> Number of People</label>
+              <input class="bill-label" type="text" id="people" pattern="[0-9]+([\.,][0-9]+)?" value="$">
+            </div>
+          </form>
+        </div>
+
+      
+          <div class="result">
+            <div class="block">
+              <p>Tip Amount</p>
+              <p>/ person</p>
+            </div>
+            <div class="block block-right">
+              <h2>$0.00</h2>
+            </div>
+
+            <div class="block">
+              <p>Total</p>
+              <p>/ person</p>
+            </div>
+            <div class="block block-right">
+              <h2>$0.00</h2>
+            </div>
+            <div class="block button-result"><p class="reset">RESET</p></button></div>
+           </div>
+        </div>
+      
+
+      </div>
+     
+    </div>
+
+
+
+
+<script src="./ss.js"></script>
+  </main>
+
+
+
+  <!-- Bill
+
+  Select Tip %
+  5%
+  10%
+  15%
+  25%
+  50%
+  Custom
+
+  Number of People
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset -->
+  
+</body>
+</html>
